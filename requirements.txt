@@ -2,4 +2,4 @@ django
 gunicorn
 django-heroku
 psycopg2
-rest_framerk
+djangorestframework
