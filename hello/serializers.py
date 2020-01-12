@@ -4,7 +4,7 @@ from hello.models import Main
 class MainSerializer(serializers.Serializer):
     
     userId=serializers.CharField(max_length=100)
-    timestamp= serializers.DateTimeField()
+    timestamp= serializers.IntegerField()
     alt=serializers.FloatField()
     lng=serializers.FloatField()
     accSpeedX=serializers.FloatField()
