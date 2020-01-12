@@ -133,8 +133,8 @@ STATIC_URL = "/static/"
 
 django_heroku.settings(locals())
 
-REST_FRAMEWORK = {
-    
-    # transforms the timestam into an integer
-    'DATETIME_FORMAT': '%d', 
-}
+#REST_FRAMEWORK = {
+#    
+#    # transforms the timestam into an integer
+#    'DATETIME_FORMAT': '%d', 
+#}
