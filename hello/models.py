@@ -8,7 +8,8 @@ class Greeting(models.Model):
 class Main(models.Model):
     
     userId=models.CharField(max_length=100)
-    timestamp= models.DateTimeField(auto_now_add=True)
+    timestamp=models.IntegerField()
+    #timestamp= models.DateTimeField(auto_now_add=True)
     alt=models.FloatField()
     lng=models.FloatField()
     accSpeedX=models.FloatField()
