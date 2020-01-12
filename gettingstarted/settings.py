@@ -88,16 +88,16 @@ DATABASES = {
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 # ENRICO'S DETAILS 
-DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-         'NAME': 'trumyleheroku',
-         'USER': 'userl',
-         'PASSWORD': 'angelo',
-         'HOST': 'manny.db.elephantsql.com',
-         'PORT': '5432',
-     }
-}
+#DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'trumyleheroku',
+#         'USER': 'userl',
+#         'PASSWORD': 'angelo',
+#         'HOST': 'manny.db.elephantsql.com',
+#         'PORT': '5432',
+#     }
+#}
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
