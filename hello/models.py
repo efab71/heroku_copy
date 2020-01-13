@@ -15,3 +15,6 @@ class Main(models.Model):
     accSpeedX=models.FloatField()
     accSpeedY=models.FloatField()
     accSpeedZ=models.FloatField()
+
+    class Meta:
+        ordering =  ["timestamp"]

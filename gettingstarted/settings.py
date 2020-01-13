@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "hello",
-    "rest_framework"
+    "rest_framework",
+    "django_filters",
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,12 @@ django_heroku.settings(locals())
 #    # transforms the timestam into an integer
 #    'DATETIME_FORMAT': '%d', 
 #}
+
+REST_FRAMEWORK = {
+        
+        'DEFAULT_FILTER_BACKENDS': (
+                'django_filters.rest_framework.DjangoFilterBackend',
+                'rest_framework.filters.OrderingFilter',
+                'rest_framework.filters.SearchFilter',
+                ),
+        }

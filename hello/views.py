@@ -10,6 +10,19 @@ from .models import Greeting
 from .models import Main
 from hello.serializers import MainSerializer
 
+from rest_framework import filters
+from django_filters import AllValuesFilter, DateTimeFilter, NumberFilter
+
+
+
+
+from django.contrib.auth.models import User
+import django_filters
+
+
+
+        
+        
 class JSONResponse(HttpResponse):
     def __init__(self, data, **kwargs):
         content=JSONRenderer().render(data)
@@ -33,7 +46,7 @@ def db(request):
     return render(request, "db.html", {"greetings": greetings})
 
 @csrf_exempt
-def drivers(request):
+def drivers(request, driver_id):
     
     if request.method == 'GET':
         drivers=Main.objects.all()
